@@ -42,4 +42,9 @@ bin/psensord:vendor/bin/psensord
 vendor/lib64/libcalmodule_memsic.so
 
 # Touchscreen
-etc/firmware/tp/15109/15109_GOODIX_UPDATE_TRULY.bin:vendor/firmware/tp/15109/15109_GOODIX_UPDATE_TRULY.bin
+etc/firmware/tp/15399/15399_Firmware_Truly.img:vendor/firmware/tp/15399/15399_Firmware_Truly.img
+etc/firmware/tp/15399/15399_Firmware_Biel.img:vendor/firmware/tp/15399/15399_Firmware_Biel.img
+etc/firmware/tp/15399/15399_Firmware_Oflim.img:vendor/firmware/tp/15399/15399_Firmware_Oflim.img
+etc/firmware/tp/15399/15399_Limit_Biel.img:vendor/firmware/tp/15399/15399_Limit_Biel.img
+etc/firmware/tp/15399/15399_Limit_Oflim.img:vendor/firmware/tp/15399/15399_Limit_Oflim.img
+etc/firmware/tp/15399/15399_Limit_Truly.img:vendor/firmware/tp/15399/15399_Limit_Truly.img

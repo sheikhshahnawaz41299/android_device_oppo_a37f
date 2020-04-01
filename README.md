@@ -1,3 +1,3 @@
-Copyright 2016 - The CyanogenMod Project
+Copyright 2020 - The LineageOS Project
 
-Device configuration for OPPO F1.
+Device configuration for OPPO A37.
