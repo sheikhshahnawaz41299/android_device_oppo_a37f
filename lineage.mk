@@ -16,6 +16,11 @@
 # limitations under the License.
 #
 
+$(call inherit-product, device/lenovo/PB1770M/full_a37f.mk)
+
+# Must define platform variant before including any common things
+TARGET_BOARD_PLATFORM_VARIANT := msm8916
+
 # Inherit framework first
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
@@ -34,8 +39,9 @@ PRODUCT_MANUFACTURER := OPPO
 
 PRODUCT_GMS_CLIENTID_BASE := android-oppo
 
+## Use the latest approved GMS identifiers unless running a signed build
+ifneq ($(SIGN_BUILD),true)
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="msm8916_64-user 5.1.1 LMY47V eng.root.20190228.004112 release-keys" \
-    TARGET_DEVICE="a37f"
-
-BUILD_FINGERPRINT=OPPO/A37F/A37F:5.1.1/MMB29M/1456475076:user/release-keys
+    BUILD_FINGERPRINT=OPPO/A37F/A37F:5.1.1/MMB29M/1456475076:user/release-keys \
+    PRIVATE_BUILD_DESC="msm8916_64-user 5.1.1 LMY47V eng.root.20190228.004112 release-keys"
+endif
